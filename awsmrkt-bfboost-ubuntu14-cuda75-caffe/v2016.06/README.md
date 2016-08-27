@@ -1,4 +1,4 @@
-Bitfusion Ubuntu 14 Caffe AMI
+Bitfusion Boost Ubuntu 14 Caffe AMI
 ==============================================================================
 
 
@@ -248,8 +248,7 @@ Detailed Boost and Boost Cluster documentaion is available at:
 Supported AWS Instances
 -------------------------------------------------------------------------------
 ```
-t2.medium	t2.large
-m3.medium	m3.large	m3.xlarge	m3.2xlarge
+t2.nano     t2.micro    t2.medium   t2.large
 m4.large	m4.xlarge	m4.2xlarge	m4.4xlarge	m4.10xlarge
 c3.large	c3.xlarge	c3.2xlarge	c3.4xlarge	c3.8xlarge
 c4.large	c4.xlarge	c4.2xlarge	c4.4xlarge	c4.8xlarge
