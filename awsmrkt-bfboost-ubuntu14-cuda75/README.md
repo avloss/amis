@@ -1,4 +1,4 @@
-Bitfusion Ubuntu 14 Cuda 7.5 AMI
+Bitfusion Boost Ubuntu 14 Cuda 7.5 AMI
 ==============================================================================
 
 
