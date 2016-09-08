@@ -188,6 +188,14 @@ Version History
 -------------------------------------------------------------------------------
 
 
+v2016.02
+
+ * Updated to NVIDIA cudnn 5,1
+ * Updated to NVIDIA driver 352.99
+ * Updated to Chainer v1.15.0
+ * Added gpustat
+
+
 v2016.01
 
  * NVIDIA cudnn 5
