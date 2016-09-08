@@ -62,6 +62,15 @@ Version History
 -------------------------------------------------------------------------------
 
 
+v2016.02
+
+ * Updated to Blender 2.78
+ * Updated to Nvidia Driver Version 352.99
+ * Updated to Nvidia cuDNN Version 5.1
+ * Updated to bfboost 0.1.0+1562
+ * Minor documentation fixes
+
+
 v0.01
 
  * Blender 2.77
