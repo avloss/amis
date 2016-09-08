@@ -37,12 +37,7 @@ ssh -i <path to your pem file> ubuntu@{ EC2 Instance Public IP }
 ```
 
 
-API Readme & Examples
--------------------------------------------------------------------------------
-
-Please refer to:  https://github.com/bitfusionio/blender_api
-
-## Bitfusion Blender AMI with Rest API
+## Bitfusion Blender Rest API
 
 This Ubuntu 14 AMI comes pre-installed with Nvidia Drivers, Cuda 7.5 Toolkit, and Blender 2.77. It is optimized for Nvidia GRID GPU instances as well as CPU instances. The AMI can be used Integrate compute intensive rendering directly into your applications and workflows from mobile devices or simple clients through an easy to use RestAPI.
 
