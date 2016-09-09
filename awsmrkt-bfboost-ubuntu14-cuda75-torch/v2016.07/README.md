@@ -91,17 +91,19 @@ Local Torch CPU & GPU Examples
 
 We have pre-installed Torch examples & demos in the following folders:
 
- * /opt/torch/demos (https://github.com/torch/demos.git)
+ * /home/ubuntu/torch-demos (https://github.com/torch/demos.git)
  * /home/ubuntu/cudnn.torch/test/ (https://github.com/soumith/cudnn.torch.git)
+ * /home/ubuntu/pynb/torch (https://github.com/torch/tutorials)
+    * Accessible via Jupyter
 
 #### Example 1: CPU
 ```
-  th /opt/torch/demos/profiling/conv-cpu.lua
+  th /home/ubuntu/torch-demos/profiling/conv-cpu.lua
 ```
 
 #### Example 2: GPU example with cutorch/cunn
 ```
-  th /opt/torch/demos/profiling/linear-gpu.lua
+  th /home/ubuntu/torch-demos/profiling/linear-gpu.lua
 ```
 
 #### Example 3: GPU example using cuDNN
@@ -138,13 +140,13 @@ Detailed Boost and Boost Cluster documentaion is available at:
 
 We have pre-installed Torch examples & demos in the following folders:
 
- * /opt/torch/demos (https://github.com/torch/demos.git)
+ * /home/ubuntu/torch-demos (https://github.com/torch/demos.git)
  * /home/ubuntu/cudnn.torch/test/ (https://github.com/soumith/cudnn.torch.git)
 
 #### Example 1: GPU example with cutorch/cunn
 
 ```
-  bfboost client th /opt/torch/demos/profiling/linear-gpu.lua
+  bfboost client th /home/ubuntu/torch-demos/profiling/linear-gpu.lua
 ```
 
 #### Example 2: GPU example using cuDNN
