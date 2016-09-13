@@ -295,6 +295,12 @@ Version History
 -------------------------------------------------------------------------------
 
 
+v2016.06
+
+ * Updated to Tensorflow 10
+ * AMI now starts with 100G
+
+
 v2016.05
 
  * Updated CuDNN to 5.1
