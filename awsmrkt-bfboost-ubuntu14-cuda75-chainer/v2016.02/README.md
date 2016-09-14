@@ -123,7 +123,7 @@ this tutorial how to define networks dynamically.
 $ python
 >>> import chainer
 >>> chainer.__version__
-'1.13.0'
+'1.15.0'
 >>>
 ```
  
@@ -190,9 +190,9 @@ Version History
 
 v2016.02
 
- * Updated to NVIDIA cudnn 5,1
- * Updated to NVIDIA driver 352.99
  * Updated to Chainer v1.15.0
+ * Updated to NVIDIA cudnn 5.1
+ * Updated to NVIDIA driver 352.99
  * Added gpustat
 
 
