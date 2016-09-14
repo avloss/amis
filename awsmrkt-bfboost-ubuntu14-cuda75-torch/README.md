@@ -184,7 +184,7 @@ v2016.07
  * Added gpustat
 
 
-v0.06
+v2016.06
 
  * Upgrade to cudnn 5
  * Upgrade to nvidia driver 352
