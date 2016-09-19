@@ -1,4 +1,4 @@
-None AMI
+Bitfusion Ubuntu 14 Digits v4.0.0 AMI
 ==============================================================================
 
 
@@ -7,7 +7,7 @@ Getting started - Launch the AMI
 
 Subscribe to and launch the AMI from here:
 
-[Launch the AMI](http://www.bitfusion.io/boost-machine-images/)
+[Launch the AMI](https://aws.amazon.com/marketplace/pp/B01DCKFASQ)
 
 
 EC2 Instance Access
@@ -157,6 +157,21 @@ g2.2xlarge	g2.8xlarge
 
 Version History
 -------------------------------------------------------------------------------
+
+
+v2016.02
+
+ * Updated to Digits 4.0
+ * Updated to NVIDIA cuDNN Version 5.1
+ * Updated to NVIDIA Driver 352.99
+
+
+v0.01
+
+ * Digits 3.0
+ * Cuda Toolkit Version 7.5
+ * NVIDIA cuDNN Version 4
+ * NVIDIA Driver 352.79
 
 
 
