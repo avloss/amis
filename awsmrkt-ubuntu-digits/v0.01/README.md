@@ -83,36 +83,7 @@ The default notebook directory is /home/ubuntu/pynb.  This directory is
 required for Jupyter to function.  If it is deleted you will need
 recreate it and ensure it is owned by the ubuntu user.
 
-To get started, simply launch an AWS instances using this AMI from the EC2
-Console. If you are not familiar with this process please review the AWS
-documentation provided here:
-
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/launching-instance.html
-
-Accessing the instance via SSH:
-
-    ssh -i <path to your pem file> ubuntu@<Launched Instance Public DNS>
-
-    Once you have logged in into the instance you are ready to deploy your CUDA
-    application.
-
-Security Groups:
-
-    Please take a moment to review your security groups to prevent public
-    access to the Digits WebApp and SSH port.  As a recommendation you should
-    only allow access to the Digits WebApp and SSH port from your IP
-
-    Please review the AWS documents on authorizing access to your systems:
-
-    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html
-    http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#adding-security-group-rule
-
-
--------------------------------------------------------------------------------
-
-Nvidia Digits
-
--------------------------------------------------------------------------------
+## Nvidia Digits
 
 The NVIDIA Deep Learning GPU Training System (DIGITS) puts the power of deep
 learning in the hands of data scientists and researchers. Quickly design the
@@ -120,11 +91,19 @@ best deep neural network (DNN) for your data using real-time network behavior
 visualization.
 
 
--------------------------------------------------------------------------------
+#### Security
 
-Getting Started with Digits
+Please take a moment to review your security groups to prevent public
+access to the Digits WebApp and SSH port.  As a recommendation you should
+only allow access to the Digits WebApp and SSH port from your IP
 
--------------------------------------------------------------------------------
+Please review the AWS documents on authorizing access to your systems:
+
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/authorizing-access-to-an-instance.html
+http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#adding-security-group-rule
+
+
+#### Getting Started with Digits
 
 This system comes installed with Digits and the following machine learning
 packages:
@@ -132,7 +111,9 @@ packages:
  - caffe-nv
  - pythong-caffe-nv
  - torch-nv
- - libcudnn4
+ - libcudnn5
+ - Cuda Toolkit 7.5
+ - Nvidia Driver 352.99
 
 Using the WebApp:
 
@@ -146,11 +127,7 @@ Nvidia getting started guide:
 https://github.com/NVIDIA/DIGITS/blob/master/docs/GettingStarted.md#using-the-webapp
 
 
--------------------------------------------------------------------------------
-
-Supported & Tested AWS Instances
-
--------------------------------------------------------------------------------
+## Supported & Tested AWS Instances
 
 g2.2xlarge	g2.8xlarge
 
