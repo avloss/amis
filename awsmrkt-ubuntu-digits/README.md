@@ -135,14 +135,6 @@ g2.2xlarge	g2.8xlarge
 Version History
 -------------------------------------------------------------------------------
 
-
-v2016.02
-
- * Updated to Digits 4.0
- * Updated to NVIDIA cuDNN Version 5.1
- * Updated to NVIDIA Driver 352.99
-
-
 v0.01
 
  * Digits 3.0
