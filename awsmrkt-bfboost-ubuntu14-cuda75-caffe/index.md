@@ -262,6 +262,14 @@ Version History
 -------------------------------------------------------------------------------
 
 
+v2016.07
+
+ * Migrated to user install of caffe
+ * Systems now determines if the instance type has GPUs. If so it set the path to caffe compiled with CUDA
+ * Jupyter should work on both CPU and GPU instance types
+ * Added Caffe example notebooks to Jupyter
+
+
 v2016.06
 
  * Updated to latest version Bitfusion Boost 0.1.0+1562
