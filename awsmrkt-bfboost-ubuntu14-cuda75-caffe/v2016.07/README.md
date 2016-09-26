@@ -86,29 +86,18 @@ recreate it and ensure it is owned by the ubuntu user.
 PyCaffe
 -------------------------------------------------------------------------------
 
-We have compiled and installed PyCaffe for both CPUs and GPUs on this AMI.  By
-default the PYTHONPATH is set to the GPU version.  If you want to make use of
-the CPU compiled module set the PYTHONPATH with the following command:
-
-```
-  export PYTHONPATH=/opt/caffe-cpu/python:$PYTHONPATH
-```
-
-To set it back to the GPU module:
-
-```
-   export PYTHONPATH=/opt/caffe-gpu/python:$PYTHONPATH
-```
+We have compiled and installed PyCaffe for both CPUs and GPUs on this AMI. When 
+the system boots we determine the instance type and set the path appropriatley.
 
 #### PyCaffe Import Warning:
 
     During an import you may see the following warning:
 ```
-   /opt/caffe-cpu/python/caffe/pycaffe.py:13: RuntimeWarning: to-Python converter for boost::shared_ptr<caffe::Net<float> > already registered; second conversion method ignored.
+   /home/ubuntu/caffe/python/caffe/pycaffe.py:13: RuntimeWarning: to-Python converter for boost::shared_ptr<caffe::Net<float> > already registered; second conversion method ignored.
      from ._caffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, \
-   /opt/caffe-cpu/python/caffe/pycaffe.py:13: RuntimeWarning: to-Python converter for boost::shared_ptr<caffe::Blob<float> > already registered; second conversion method ignored.
+   /home/ubuntu/caffe/python/caffe/pycaffe.py:13: RuntimeWarning: to-Python converter for boost::shared_ptr<caffe::Blob<float> > already registered; second conversion method ignored.
      from ._caffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, \
-   /opt/caffe-cpu/python/caffe/pycaffe.py:13: RuntimeWarning: to-Python converter for boost::shared_ptr<caffe::Solver<float> > already registered; second conversion method ignored.
+   /home/ubuntu/caffe/python/caffe/pycaffe.py:13: RuntimeWarning: to-Python converter for boost::shared_ptr<caffe::Solver<float> > already registered; second conversion method ignored.
      from ._caffe import Net, SGDSolver, NesterovSolver, AdaGradSolver, \
 ```
 
@@ -125,18 +114,18 @@ We have pre-installed the Caffe CPU version and examples in the following
 folder:
 
 ```
-  /opt/caffe-cpu
+  /home/ubuntu/caffe
 ```
 
 ##### Example - Training LeNet on MNIST with Caffe:
 
-Readme: /opt/caffe-cpu/examples/mnist/readme.md
+Readme: //home/ubuntu/caffe/examples/mnist/readme.md
 
 You will first need to download and convert the data format from the MNIST
 website. To do this, run the following commands:
 
 ```
-  cd /opt/caffe-cpu
+  cd /home/ubuntu/caffe
   ./data/mnist/get_mnist.sh
   ./examples/mnist/create_mnist.sh
 ```
@@ -165,18 +154,18 @@ We have pre-installed the Caffe GPU version and examples in the following
 folder:
 
 ```
-  /opt/caffe-gpu
+  /home/ubuntu/caffe
 ```
 
 #### Example - Training LeNet on MNIST with Caffe:
 
-Readme: /opt/caffe-gpu/examples/mnist/readme.md
+Readme:   /home/ubuntu/caffe/examples/mnist/readme.md
 
 You will first need to download and convert the data format from the MNIST
 website. To do this, run the following commands:
 
 ```
-  cd /opt/caffe-gpu
+  cd /home/ubuntu/caffe
   ./data/mnist/get_mnist.sh
   ./examples/mnist/create_mnist.sh
 ```
@@ -222,13 +211,13 @@ For example you can execute device query as follows:
 
 Example - Training LeNet on MNIST with Caffe:
 
-Readme: /opt/caffe-gpu/examples/mnist/readme.md
+Readme: /home/ubuntu/caffe/examples/mnist/readme.md
 
 You will first need to download and convert the data format from the MNIST
 website. To do this, run the following commands:
 
 ```
-  cd /opt/caffe-gpu
+  cd /home/ubuntu/caffe
 
   ./data/mnist/get_mnist.sh
   ./examples/mnist/create_mnist.sh
