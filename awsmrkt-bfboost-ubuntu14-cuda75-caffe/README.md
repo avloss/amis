@@ -107,14 +107,17 @@ here:
  * https://groups.google.com/forum/#!topic/caffe-users/C_air48cISU/discussion
 
 
-Local Caffe CPU Example
+Local Caffe Example
 -------------------------------------------------------------------------------
 
-We have pre-installed the Caffe CPU version and examples in the following
+We have pre-installed Caffe and and examples in ```/home/ubuntu/caffe```.  You
+can also find the following
+
+
 folder:
 
 ```
-  /home/ubuntu/caffe
+
 ```
 
 ##### Example - Training LeNet on MNIST with Caffe:
@@ -245,6 +248,7 @@ r3.large	r3.xlarge	r3.2xlarge	r3.4xlarge	r3.8xlarge
 i2.xlarge	i2.2xlarge	i2.4xlarge	i2.8xlarge
 d2.xlarge	d2.2xlarge	d2.4xlarge	d2.8xlarge
 g2.2xlarge	g2.8xlarge
+p2.2xlarge  p2.8xlarge  p2.16xlarge
 ```
 
 Version History
