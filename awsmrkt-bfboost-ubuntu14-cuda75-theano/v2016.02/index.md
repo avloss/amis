@@ -230,10 +230,13 @@ v2016.02
 
  * Updated CuDNN to 5.1
  * Updated to ipython 5
- * Updated to nvidia driver 352.99 (p2 instance support)
+ * Updated to nvidia driver 361.93 (p2 instance support)
  * Updated to latest version Bitfusion Boost 0.1.0+1562
- * Added PyCuda and ability for Jupyter to compile cuda kernels on the fly
- * Added Python 3 module
+ * Added Python 3 Theano module
+ * Added py2 and py3 modules (enum34, pycuda, pandas, enum4, scikit-learn, lasagne)
+ * Added py3 kernel to jupyter
+ * Added support to compile pycuda kernels for Jupyter
+ * Jupyter start script is now called jupyter (sudo service jupyter restart)
 
 
 v0.01
