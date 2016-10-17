@@ -73,7 +73,7 @@ Example:
 To have the new password take effect restart the Jupyter:
 
 ```
-  sudo service ipython-notebook restart
+  sudo service jupyter restart
 ```
 
 
@@ -108,7 +108,21 @@ From the Theano Documentation:
 * http://ir.hit.edu.cn/~jguo/docs/notes/a_simple_tutorial_on_theano.pdf
 * http://outlace.com/Beginner-Tutorial-Theano/
 
-When you run this AMI on a non-GPU instance you may see the following warning 
+#### Warnings
+
+CUDNN Warning:  You will see a warning regarding cuDNN - this should be harmless, we have tested
+with the examples and in house models and have not run into any issues.  If you do see any issues
+please contact us at support@bitfusion.io
+
+```
+/usr/local/lib/python2.7/dist-packages/theano/sandbox/cuda/__init__.py:600:
+UserWarning: Your cuDNN version is more recent than the one Theano officially supports.
+If you see any problems, try updating Theano or downgrading cuDNN to version 5.
+warnings.warn(warn)
+ ```
+
+
+When you run this AMI on a non-GPU instance you may see the following warning
 when running Theano. This warning can be safely ignored, it simply indicates 
 that no GPU devices were found on the system:
 
@@ -116,6 +130,8 @@ that no GPU devices were found on the system:
 WARNING (theano.sandbox.cuda): CUDA is installed, but device gpu is not available  
 (error: Unable to get the number of gpus available: no CUDA-capable device is detected)
 ```
+
+
 
 #### Theano - Minimal Examples
 
@@ -152,7 +168,7 @@ This example is taken from: http://deeplearning.net/software/theano/tutorial/add
 
 #### Theano - Verifying GPU Usage
 
-If you are using an AWS G2 EC2 instance we have included a test script to
+If you are using an AWS GPU instance we have included a test script to
 confirm that Theano is using the GPU. The script comes from the Theano
 documentation:
 
@@ -167,6 +183,18 @@ To verify GPU Usage:
 ```
 
 
+Lasagne
+-------------------------------------------------------------------------------
+
+[Lasagne](https://github.com/Lasagne/Lasagne) is a lightweight wrapper built around Theano for building and training neural networks.
+This AMI has the latest development version (As of the publish data of the AMI)
+
+#### Lasagne Example
+
+```
+cd /home/ubuntu/lasagne-example
+python lasagne-mnist-example.py
+```
 
 Keras
 -------------------------------------------------------------------------------
@@ -219,6 +247,7 @@ r3.large	r3.xlarge	r3.2xlarge	r3.4xlarge	r3.8xlarge
 i2.xlarge	i2.2xlarge	i2.4xlarge	i2.8xlarge
 d2.xlarge	d2.2xlarge	d2.4xlarge	d2.8xlarge
 g2.2xlarge	g2.8xlarge
+p2.xlarge   p2.8xlarge  p2.16xlarge
 x1.32xlarge
 ```
 
