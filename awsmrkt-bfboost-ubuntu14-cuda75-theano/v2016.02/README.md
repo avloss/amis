@@ -238,17 +238,17 @@ You can execute these examples directly from the command line:
 Supported AWS Instances
 -------------------------------------------------------------------------------
 ```
-t2.nano     t2.micro    t2.medium   t2.large
-m3.medium	m3.large	m3.xlarge	m3.2xlarge
-m4.large	m4.xlarge	m4.2xlarge	m4.4xlarge	m4.10xlarge
-c3.large	c3.xlarge	c3.2xlarge	c3.4xlarge	c3.8xlarge
-c4.large	c4.xlarge	c4.2xlarge	c4.4xlarge	c4.8xlarge
-r3.large	r3.xlarge	r3.2xlarge	r3.4xlarge	r3.8xlarge
-i2.xlarge	i2.2xlarge	i2.4xlarge	i2.8xlarge
-d2.xlarge	d2.2xlarge	d2.4xlarge	d2.8xlarge
-g2.2xlarge	g2.8xlarge
-p2.xlarge   p2.8xlarge  p2.16xlarge
-x1.32xlarge
+t2.nano      t2.micro    t2.medium   t2.large
+m3.medium    m3.large    m3.xlarge	 m3.2xlarge
+m4.large     m4.xlarge   m4.2xlarge	 m4.4xlarge	 m4.10xlarge  m4.16xlarge
+c3.large     c3.xlarge   c3.2xlarge	 c3.4xlarge	 c3.8xlarge
+c4.large     c4.xlarge   c4.2xlarge	 c4.4xlarge	 c4.8xlarge
+r3.large     r3.xlarge   r3.2xlarge	 r3.4xlarge	 r3.8xlarge
+i2.xlarge    i2.2xlarge  i2.4xlarge	 i2.8xlarge
+d2.xlarge    d2.2xlarge  d2.4xlarge  d2.8xlarge
+g2.2xlarge   g2.8xlarge
+p2.xlarge    p2.8xlarge  p2.16xlarge
+x1.16xlarge  x1.32xlarge
 ```
 
 Version History
@@ -259,11 +259,16 @@ v2016.02
 
  * Updated CuDNN to 5.1
  * Updated to ipython 5
- * Updated to nvidia driver 361.93 (p2 instance support)
+ * Updated to nvidia driver 352.99 (p2 instance support)
  * Updated to latest version Bitfusion Boost 0.1.0+1562
- * Added Python 3 Theano module
- * Added py2 and py3 modules (enum34, pycuda, pandas, enum4, scikit-learn, lasagne)
- * Added py3 kernel to jupyter
+ * Updated to Keras 1.1.0
+ * Added Python 3 Theano 0.8.2 module
+ * Added Lasage 0.2.dev1 (Python 2 and Python 3)
+ * Added Scikit-learn 0.18 (Python 2 and Python 3)
+ * Added Enum34
+ * Added pycuda 2016.1.2
+ * Added Pandas 0.19.0
+ * Added Python 3 kernel to Jupyter
  * Added support to compile pycuda kernels for Jupyter
  * Jupyter start script is now called jupyter (sudo service jupyter restart)
 
