@@ -73,7 +73,7 @@ Example:
 To have the new password take effect restart the Jupyter:
 
 ```
-  sudo service ipython-notebook restart
+  sudo service jupyter restart
 ```
 
 
@@ -110,19 +110,12 @@ here:
 Local Caffe Example
 -------------------------------------------------------------------------------
 
-We have pre-installed Caffe and and examples in ```/home/ubuntu/caffe```.  You
-can also find the following
+We have pre-installed Caffe and and examples in ```/home/ubuntu/caffe```.
 
-
-folder:
-
-```
-
-```
 
 ##### Example - Training LeNet on MNIST with Caffe:
 
-Readme: //home/ubuntu/caffe/examples/mnist/readme.md
+Readme: ```/home/ubuntu/caffe/examples/mnist/readme.md```
 
 You will first need to download and convert the data format from the MNIST
 website. To do this, run the following commands:
@@ -153,16 +146,12 @@ To run the test:
 Local Caffe GPU Example
 -------------------------------------------------------------------------------
 
-We have pre-installed the Caffe GPU version and examples in the following
-folder:
+We have pre-installed Caffe and and examples in ```/home/ubuntu/caffe```.
 
-```
-  /home/ubuntu/caffe
-```
 
 #### Example - Training LeNet on MNIST with Caffe:
 
-Readme:   /home/ubuntu/caffe/examples/mnist/readme.md
+Readme:   ```/home/ubuntu/caffe/examples/mnist/readme.md```
 
 You will first need to download and convert the data format from the MNIST
 website. To do this, run the following commands:
