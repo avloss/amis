@@ -187,7 +187,7 @@ Lasagne
 -------------------------------------------------------------------------------
 
 [Lasagne](https://github.com/Lasagne/Lasagne) is a lightweight wrapper built around Theano for building and training neural networks.
-This AMI has the latest development version (As of the publish data of the AMI)
+This AMI has the latest development version (As of the publish date of the AMI)
 
 #### Lasagne Example
 
@@ -263,11 +263,11 @@ v2016.02
  * Updated to latest version Bitfusion Boost 0.1.0+1562
  * Updated to Keras 1.1.0
  * Added Python 3 Theano 0.8.2 module
- * Added Lasage 0.2.dev1 (Python 2 and Python 3)
+ * Added Lasagne 0.2.dev1 (Python 2 and Python 3)
  * Added Scikit-learn 0.18 (Python 2 and Python 3)
- * Added Enum34
- * Added pycuda 2016.1.2
- * Added Pandas 0.19.0
+ * Added Enum34 (Python 2 and Python 3)
+ * Added pycuda 2016.1.2 (Python 2 and Python 3)
+ * Added Pandas 0.19.0 (Python 2 and Python 3)
  * Added Python 3 kernel to Jupyter
  * Added support to compile pycuda kernels for Jupyter
  * Jupyter start script is now called jupyter (sudo service jupyter restart)
