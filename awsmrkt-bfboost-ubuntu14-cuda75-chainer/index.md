@@ -48,9 +48,23 @@ it by executing the following command:
 
 **It is highly recommended that you change the Jupyter login password.**
 
-When logged in via ssh you can update the hashed password using the function
-notebook.auth.security.passwd():
+When logged in via ssh you can update the hashed password using one of the following functions:
 
+ * for iPython 5 ```IPython.lib.passwd```
+ * for any earlier release of iPython ```notebook.auth.security.passwd()```:
+
+iPython 5 example:
+```
+  ipython
+  In [1]: from IPython.lib import passwd
+  In [2]: passwd()
+  Enter password:
+  Verify password:
+  Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
+  exit()
+```
+
+iPython 4 and earlier example:
 ```
   ipython
   In [1]: from notebook.auth import passwd
@@ -61,8 +75,9 @@ notebook.auth.security.passwd():
   exit()
 ```
 
-You can then add the hashed password to your Jupyter config file, the default
-location for this file is ~/.jupyter/jupyter_notebook_config.py
+You can then add the outputed hashed password, which should look similar to ```sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed```
+,to your Jupyter config file. The default location for this file is ~/.jupyter/jupyter_notebook_config.py. If you scroll
+to the bottom of the file you will see the configuration entry that needs to be updated:
 
 Example:
 
@@ -70,10 +85,10 @@ Example:
   c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 ```
 
-To have the new password take effect restart the Jupyter:
+Place your update string in place the old one and restart Jupyter to have the password take effect.
 
 ```
-  sudo service ipython-notebook restart
+  sudo service jupyter restart
 ```
 
 
@@ -181,6 +196,7 @@ r3.large	r3.xlarge	r3.2xlarge	r3.4xlarge	r3.8xlarge
 i2.xlarge	i2.2xlarge	i2.4xlarge	i2.8xlarge
 d2.xlarge	d2.2xlarge	d2.4xlarge	d2.8xlarge
 g2.2xlarge	g2.8xlarge
+p2.xlarge   p2.8xlarge  p2.16xlarge
 x1.32xlarge
 ```
 
@@ -188,12 +204,19 @@ Version History
 -------------------------------------------------------------------------------
 
 
+v2016.03
+
+ * Updated to Chainer v1.17.0
+ * Added the following modules for Python 2 and Python 3 - Enum34 - h5py 2.6.0 - Matplotlib 1.5.3 - NumPy 1.11.1 - Pandas 0.18.1 - PyDot 1.1.0 - SciPy 0.18.0 - SymPy 1.0
+
+
 v2016.02
 
  * Updated to Chainer v1.15.0
  * Updated to NVIDIA cudnn 5.1
- * Updated to NVIDIA driver 352.99
+ * Updated to NVIDIA driver 352.99 (support for AWS p2 instance types)
  * Added gpustat
+ * Added support for P2 instances
 
 
 v2016.01
