@@ -2,6 +2,11 @@ Bitfusion Ubuntu 14 Chainer AMI
 ==============================================================================
 
 
+
+* [Join us on slack](https://slack-bitfusion-aws.herokuapp.com/): [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/) 
+* [Send us a ticket](http://www.bitfusion.io/support/)
+
+
 Getting started - Launch the AMI
 -------------------------------------------------------------------------------
 
@@ -207,7 +212,7 @@ Version History
 v2016.03
 
  * Updated to Chainer v1.17.0
- * Added the following modules for Python 2 and Python 3 - Enum34 - h5py 2.6.0 - Matplotlib 1.5.3 - NumPy 1.11.1 - Pandas 0.18.1 - PyDot 1.1.0 - SciPy 0.18.0 - SymPy 1.0
+ * Added the following modules for Python 2 and Python 3 - Enum34 - h5py 2.6.0 - Matplotlib 1.5.3 - NumPy 1.11.1 - Pandas 0.18.1 - PyDot 1.1.0 - SciPy 0.18.0 - SymPy 1.0 - Added Python Notebook Extensions
 
 
 v2016.02
