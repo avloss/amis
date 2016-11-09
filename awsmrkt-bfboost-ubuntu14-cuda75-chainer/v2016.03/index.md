@@ -3,13 +3,13 @@ Bitfusion Ubuntu 14 Chainer AMI
 
 
 
-| - | - |
-|---|---|
-| [Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/) | [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)  |
-| [Contact Us](http://www.bitfusion.io/support/)                 |                                                                                                                       |
+#### Contact Us
+
+[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+[Contact Us](http://www.bitfusion.io/support/)                                                                                                                                      
 
 
-* 
+
 
 
 Getting started - Launch the AMI
@@ -42,7 +42,7 @@ Jupyter Notebook - http://{ EC2 Instance Public IP }:8888
 
 You can login to the notebook at:
 
-  * http://{EC2 Instance Public IP}:8888
+  * `http://{EC2 Instance Public IP}:8888`
   * The login PASSWORD is set to the Instance ID.
 
 You can get the Instance ID (Jupyter Notebook Password) from the EC2 console by
@@ -243,4 +243,7 @@ Support
 -------------------------------------------------------------------------------
 
 Please send all comments and support request to support@bitfusion.io
+
+[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+[Contact Us](http://www.bitfusion.io/support/)           
 
