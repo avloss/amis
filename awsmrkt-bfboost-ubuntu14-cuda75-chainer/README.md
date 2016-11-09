@@ -3,8 +3,13 @@ Bitfusion Ubuntu 14 Chainer AMI
 
 
 
-* [Join us on slack](https://slack-bitfusion-aws.herokuapp.com/): [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/) 
-* [Send us a ticket](http://www.bitfusion.io/support/)
+| - | - |
+|---|---|
+| [Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/) | [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)  |
+| [Contact Us](http://www.bitfusion.io/support/)                 |                                                                                                                       |
+
+
+* 
 
 
 Getting started - Launch the AMI
