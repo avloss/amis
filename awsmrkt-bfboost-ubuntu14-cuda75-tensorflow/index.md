@@ -2,6 +2,16 @@ Bitfusion Ubuntu 14 Tensorflow AMI
 ==============================================================================
 
 
+
+#### Contact Us
+
+[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+[Contact Us](http://www.bitfusion.io/support/)                                                                                                                                      
+
+
+
+
+
 Getting started - Launch the AMI
 -------------------------------------------------------------------------------
 
@@ -32,7 +42,7 @@ Jupyter Notebook - http://{ EC2 Instance Public IP }:8888
 
 You can login to the notebook at:
 
-  * http://{EC2 Instance Public IP}:8888
+  * `http://{EC2 Instance Public IP}:8888`
   * The login PASSWORD is set to the Instance ID.
 
 You can get the Instance ID (Jupyter Notebook Password) from the EC2 console by
@@ -311,6 +321,22 @@ Version History
 -------------------------------------------------------------------------------
 
 
+v2016.07
+
+ * Updated to Tensorflow v0.11.0rc2
+ * Updated Matplotlib to 1.5.3
+ * Added Hyperas (Python2 and Python3 modules)
+ * Added Numpy 1.11.1 (Python2 and Python3 modules)
+ * Added SciPy 0.18.0 (Python2 and Python3 modules)
+ * Added Pandas 0.18.1 (Python2 and Python3 modules)
+ * Added Sympy 1.0 (Python2 and Python3 modules)
+ * Added Enum34 (Python 2 and Python 3)
+ * Added PyCuda 2016.1.2 (Python 2 and Python 3)
+ * Added support to compile pycuda kernels for Jupyter
+ * Added Jupyter NBExtensions
+ * Jupyter start script is now called jupyter (sudo service jupyter restart)
+
+
 v2016.06
 
  * Updated to Tensorflow 10
@@ -370,3 +396,6 @@ Support
 -------------------------------------------------------------------------------
 
 Please send all comments and support request to support@bitfusion.io
+
+[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+[Contact Us](http://www.bitfusion.io/support/)           
