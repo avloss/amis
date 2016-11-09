@@ -143,6 +143,16 @@ The Define-by-Run scheme is the core concept of Chainer. We will show in
 this tutorial how to define networks dynamically.
 ```
 
+### Chainer Handson Notebook
+
+We have included the [Chainer Handson Tutorial](https://github.com/hido/chainer-handson) with the AMI.
+
+You can login and work through the notebook by navigating to url below.  For more information 
+on using Jupyter with this AMI, please refer to the Jupyter section
+
+  * `http://{EC2 Instance Public IP}:8888`
+
+
 ### Verify Chainer is installed
 ```
 $ python
@@ -217,7 +227,16 @@ Version History
 v2016.03
 
  * Updated to Chainer v1.17.0
- * Added the following modules for Python 2 and Python 3 - Enum34 - h5py 2.6.0 - Matplotlib 1.5.3 - NumPy 1.11.1 - Pandas 0.18.1 - PyDot 1.1.0 - SciPy 0.18.0 - SymPy 1.0 - Added Python Notebook Extensions
+ * Enum34 (Python2 and Python3 modules)
+ * h5py 2.6.0 (Python2 and Python3 modules)
+ * Matplotlib 1.5.3 (Python2 and Python3 modules)
+ * NumPy 1.11.1 (Python2 and Python3 modules)
+ * Pandas 0.18.1 (Python2 and Python3 modules)
+ * PyDot 1.1.0 (Python2 and Python3 modules)
+ * SciPy 0.18.0 (Python2 and Python3 modules)
+ * SymPy 1.0 (Python2 and Python3 modules)
+ * Added Python Notebook Extensions
+ * Added PyCuda
 
 
 v2016.02
