@@ -2,6 +2,16 @@ Bitfusion Boost Ubuntu 14 Caffe AMI
 ==============================================================================
 
 
+
+#### Contact Us
+
+[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+[Contact Us](http://www.bitfusion.io/support/)                                                                                                                                      
+
+
+
+
+
 Getting started - Launch the AMI
 -------------------------------------------------------------------------------
 
@@ -32,7 +42,7 @@ Jupyter Notebook - http://{ EC2 Instance Public IP }:8888
 
 You can login to the notebook at:
 
-  * http://{EC2 Instance Public IP}:8888
+  * `http://{EC2 Instance Public IP}:8888`
   * The login PASSWORD is set to the Instance ID.
 
 You can get the Instance ID (Jupyter Notebook Password) from the EC2 console by
@@ -48,9 +58,23 @@ it by executing the following command:
 
 **It is highly recommended that you change the Jupyter login password.**
 
-When logged in via ssh you can update the hashed password using the function
-notebook.auth.security.passwd():
+When logged in via ssh you can update the hashed password using one of the following functions:
 
+ * for iPython 5 ```IPython.lib.passwd```
+ * for any earlier release of iPython ```notebook.auth.security.passwd()```:
+
+iPython 5 example:
+```
+  ipython
+  In [1]: from IPython.lib import passwd
+  In [2]: passwd()
+  Enter password:
+  Verify password:
+  Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
+  exit()
+```
+
+iPython 4 and earlier example:
 ```
   ipython
   In [1]: from notebook.auth import passwd
@@ -61,8 +85,9 @@ notebook.auth.security.passwd():
   exit()
 ```
 
-You can then add the hashed password to your Jupyter config file, the default
-location for this file is ~/.jupyter/jupyter_notebook_config.py
+You can then add the outputed hashed password, which should look similar to ```sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed```
+,to your Jupyter config file. The default location for this file is ~/.jupyter/jupyter_notebook_config.py. If you scroll
+to the bottom of the file you will see the configuration entry that needs to be updated:
 
 Example:
 
@@ -70,7 +95,7 @@ Example:
   c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 ```
 
-To have the new password take effect restart the Jupyter:
+Place your update string in place the old one and restart Jupyter to have the password take effect.
 
 ```
   sudo service jupyter restart
@@ -305,3 +330,6 @@ Support
 -------------------------------------------------------------------------------
 
 Please send all comments and support request to support@bitfusion.io
+
+[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+[Contact Us](http://www.bitfusion.io/support/)           
