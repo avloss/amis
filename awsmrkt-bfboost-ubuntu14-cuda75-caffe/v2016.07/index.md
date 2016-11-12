@@ -276,6 +276,16 @@ v2016.07
  * Jupyter should work on both CPU and GPU instance types
  * Added Caffe example notebooks to Jupyter
  * Added Bitfusion README Python Notebook
+ * Enum34 (Python2 and Python3 modules)
+ * h5py 2.6.0 (Python2 and Python3 modules)
+ * Matplotlib 1.5.3 (Python2 and Python3 modules)
+ * NumPy 1.11.1 (Python2 and Python3 modules)
+ * Pandas 0.18.1 (Python2 and Python3 modules)
+ * PyDot 1.1.0 (Python2 and Python3 modules)
+ * SciPy 0.18.0 (Python2 and Python3 modules)
+ * SymPy 1.0 (Python2 and Python3 modules)
+ * Added Python Notebook Extensions
+ * Added PyCuda
 
 
 v2016.06
