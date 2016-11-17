@@ -271,8 +271,8 @@ Version History
 
 v2016.07
 
- * Migrated to user install of caffe
- * Systems now determines if the instance type has GPUs. If so it set the path to caffe compiled with CUDA
+ * Migrated to user install of caffe v1.0.0-rc3
+ * Systems now determines if the instance type has GPUs. If so it is set to the path to caffe compiled with CUDA
  * Jupyter should work on both CPU and GPU instance types
  * Added Caffe example notebooks to Jupyter
  * Added Bitfusion README Python Notebook
@@ -280,7 +280,7 @@ v2016.07
  * h5py 2.6.0 (Python2 and Python3 modules)
  * Matplotlib 1.5.3 (Python2 and Python3 modules)
  * NumPy 1.11.1 (Python2 and Python3 modules)
- * Pandas 0.18.1 (Python2 and Python3 modules)
+ * Pandas 0.19.1 (Python2 and Python3 modules)
  * PyDot 1.1.0 (Python2 and Python3 modules)
  * SciPy 0.18.0 (Python2 and Python3 modules)
  * SymPy 1.0 (Python2 and Python3 modules)
