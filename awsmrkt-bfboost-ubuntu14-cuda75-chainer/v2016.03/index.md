@@ -5,8 +5,9 @@ Bitfusion Ubuntu 14 Chainer AMI
 
 #### Contact Us
 
-[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
-[Contact Us](http://www.bitfusion.io/support/)                                                                                                                                      
+* [Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+
+* [Send us a note](http://www.bitfusion.io/support/)                                                                                                                                      
 
 
 
@@ -147,7 +148,7 @@ this tutorial how to define networks dynamically.
 
 We have included the [Chainer Handson Tutorial](https://github.com/hido/chainer-handson) with the AMI.
 
-You can login and work through the notebook by navigating to url below.  For more information 
+You can login and work through the notebook by navigating to the url below.  For more information 
 on using Jupyter with this AMI, please refer to the Jupyter section
 
   * `http://{EC2 Instance Public IP}:8888`
@@ -209,7 +210,7 @@ Supported AWS Instances
 ```
 t2.nano     t2.micro    t2.medium   t2.large
 m3.medium	m3.large	m3.xlarge	m3.2xlarge
-m4.large	m4.xlarge	m4.2xlarge	m4.4xlarge	m4.10xlarge
+m4.large	m4.xlarge	m4.2xlarge	m4.4xlarge	m4.10xlarge  m4.16xlarge
 c3.large	c3.xlarge	c3.2xlarge	c3.4xlarge	c3.8xlarge
 c4.large	c4.xlarge	c4.2xlarge	c4.4xlarge	c4.8xlarge
 r3.large	r3.xlarge	r3.2xlarge	r3.4xlarge	r3.8xlarge
@@ -217,7 +218,7 @@ i2.xlarge	i2.2xlarge	i2.4xlarge	i2.8xlarge
 d2.xlarge	d2.2xlarge	d2.4xlarge	d2.8xlarge
 g2.2xlarge	g2.8xlarge
 p2.xlarge   p2.8xlarge  p2.16xlarge
-x1.32xlarge
+x1.16xlarge x1.32xlarge
 ```
 
 Version History
