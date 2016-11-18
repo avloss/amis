@@ -5,8 +5,9 @@ Bitfusion Ubuntu 14 Tensorflow AMI
 
 #### Contact Us
 
-[Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
-[Contact Us](http://www.bitfusion.io/support/)                                                                                                                                      
+* [Join us on Slack](https://slack-bitfusion-aws.herokuapp.com/)  [![](https://slack.global.ssl.fastly.net/272a/img/icons/favicon-16.png)](https://slack-bitfusion-aws.herokuapp.com/)
+
+* [Send us a note](http://www.bitfusion.io/support/)                                                                                                                                      
 
 
 
@@ -323,7 +324,7 @@ Version History
 
 v2016.07
 
- * Updated to Tensorflow v0.11.0rc2
+ * Updated to Tensorflow v0.11.0
  * Updated Matplotlib to 1.5.3
  * Added Hyperas (Python2 and Python3 modules)
  * Added Numpy 1.11.1 (Python2 and Python3 modules)
