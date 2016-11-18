@@ -185,7 +185,7 @@ using the python3 command to utilize python 3.
 The tensorflow documentation has a great write up using this dataset:
 https://www.tensorflow.org/versions/master/tutorials/deep_cnn/index.html
 
-On a g2.2xlarge:
+On a g2.2xlarge or p2.xlarge:
 
 ```
   python ~/tensorflow/tensorflow/models/image/cifar10/cifar10_multi_gpu_train.py
@@ -197,7 +197,7 @@ To view the GPU usage:
   watch -n0.1 nvidia-smi
 ```
 
-On a g2.8xlarge:
+On a g2.8xlarge, p2.8xlarge or p2.16xlarge:
 
 By default the python script will use one GPU. To have the script use all
 four GPUs you need to specify "--num_gpus=4" at the end of the command.
@@ -326,7 +326,7 @@ v2016.07
 
  * Updated to Tensorflow v0.11.0
  * Updated Matplotlib to 1.5.3
- * Added Hyperas (Python2 and Python3 modules)
+ * Added Hyperas 0.2 (Python2 and Python3 modules)
  * Added Numpy 1.11.1 (Python2 and Python3 modules)
  * Added SciPy 0.18.0 (Python2 and Python3 modules)
  * Added Pandas 0.18.1 (Python2 and Python3 modules)
