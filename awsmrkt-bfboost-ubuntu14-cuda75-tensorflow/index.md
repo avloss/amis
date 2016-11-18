@@ -199,8 +199,9 @@ To view the GPU usage:
 
 On a g2.8xlarge, p2.8xlarge or p2.16xlarge:
 
-By default the python script will use one GPU. To have the script use all
-four GPUs you need to specify "--num_gpus=4" at the end of the command.
+By default the python script will use one GPU. To have the script use one or more GPUs
+you need to specify the argument "--num_gpus={ Number of GPUS }" at the end of the command.
+
 
 ```
     python ~/tensorflow/tensorflow/models/image/cifar10/cifar10_multi_gpu_train.py --num_gpus=4
@@ -307,7 +308,7 @@ Supported AWS Instances
 ```
 t2.nano     t2.micro    t2.medium   t2.large
 m3.medium   m3.large    m3.xlarge   m3.2xlarge
-m4.large    m4.xlarge   m4.2xlarge  m4.4xlarge  m4.10xlarge
+m4.large    m4.xlarge   m4.2xlarge  m4.4xlarge  m4.10xlarge  m4.16xlarge
 c3.large    c3.xlarge   c3.2xlarge  c3.4xlarge  c3.8xlarge
 c4.large    c4.xlarge   c4.2xlarge  c4.4xlarge  c4.8xlarge
 r3.large    r3.xlarge   r3.2xlarge  r3.4xlarge  r3.8xlarge
@@ -315,7 +316,7 @@ i2.xlarge   i2.2xlarge  i2.4xlarge  i2.8xlarge
 d2.xlarge   d2.2xlarge  d2.4xlarge  d2.8xlarge
 g2.2xlarge  g2.8xlarge
 p2.xlarge   p2.8xlarge
-x1.32xlarge
+x1.16xlarge x1.32xlarge
 ```
 
 Version History
