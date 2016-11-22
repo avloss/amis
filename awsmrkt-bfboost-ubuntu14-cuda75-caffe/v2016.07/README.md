@@ -286,8 +286,8 @@ v2016.07
  * PyDot 1.1.0 (Python2 and Python3 modules)
  * SciPy 0.18.0 (Python2 and Python3 modules)
  * SymPy 1.0 (Python2 and Python3 modules)
+ * Added PyCuda 2016.1.2 (Python 2 and Python 3)
  * Added Python Notebook Extensions
- * Added PyCuda
 
 
 v2016.06
