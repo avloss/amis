@@ -159,7 +159,7 @@ on using Jupyter with this AMI, please refer to the Jupyter section
 $ python
 >>> import chainer
 >>> chainer.__version__
-'1.15.0'
+'1.17.0'
 >>>
 ```
  
