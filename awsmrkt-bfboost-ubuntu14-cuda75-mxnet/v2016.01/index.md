@@ -182,6 +182,15 @@ python3 example/image-classification/train_mnist.py --network lenet --gpus 0
 ```
 
 
+### MXNet CPU Training Example
+
+Simply remove the GPU argument at the end
+```
+cd /home/ubuntu/mxnet
+python example/image-classification/train_mnist.py --network lenet
+
+```
+
 
 
 Supported AWS Instances
@@ -196,7 +205,7 @@ r3.large    r3.xlarge   r3.2xlarge  r3.4xlarge  r3.8xlarge
 i2.xlarge   i2.2xlarge  i2.4xlarge  i2.8xlarge
 d2.xlarge   d2.2xlarge  d2.4xlarge  d2.8xlarge
 g2.2xlarge  g2.8xlarge
-p2.xlarge   p2.8xlarge
+p2.xlarge   p2.8xlarge  p2.16xlarge
 x1.16xlarge x1.32xlarge
 ```
 
