@@ -150,7 +150,7 @@ lightweight, and it scales to multiple GPUs and multiple machines.
 
 ```
 
-### MXNet Example Notebook
+### MXNet Example Notebooks
 
 The MXnet example notebooks are bundled with the AMI and are available via Jupyter
 
@@ -158,6 +158,13 @@ You can login and work through the notebooks by navigating to the url below.  Fo
 on using Jupyter with this AMI, please refer to the Jupyter section
 
   * `http://{EC2 Instance Public IP}:8888/mxnet/examples/notebooks`
+  
+##### Notebook Issues
+> In order to run use the cifar-100 notebook, you will need to run the cifar10-recipe notebook to
+> obtain the image data
+
+> The cifar10-recipe has a bug in the notebook. There is a bad path reference to the cifar data.
+> To fix it, update cell 9 and change any references to "data/cifar/" to "data/"
 
 
 ### Verify MXNet is installed
@@ -215,11 +222,15 @@ Version History
 
 v2016.01
 
- * MXNet 0.7.0 (Python2 and Python3 modules
+ * Enum34 1.1.6 (Python 2 and Python 3)
+ * H5py 2.6.0 (Python2 and Python3 modules)
+ * MXNet 0.7.0 (Python2 and Python3 modules)
  * Matplotlib to 1.5.3 (Python2 and Python2 modules)
+ * nltk 3.2.1 (Python2 and Python3 modules)
  * Numpy 1.11.1 (Python2 and Python3 modules)
  * SciPy 0.18.0 (Python2 and Python3 modules)
  * Pandas 0.19.1 (Python2 and Python3 modules)
+ * SpaCy 1.0 (Python2 and Python3 modules)
  * Sympy 1.0 (Python2 and Python3 modules)
  * Scikit-Learn 0.18.1 (Python2 and Python3 modules)
  * PyCuda 2016.1.2 (Python 2 and Python 3)
@@ -227,6 +238,7 @@ v2016.01
  * Cuda 7.5
  * cuDNN 5.1
  * Nvidia Driver 352.99
+ * GPU Stat
 
 
 
