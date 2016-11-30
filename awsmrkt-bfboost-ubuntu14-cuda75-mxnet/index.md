@@ -160,12 +160,17 @@ on using Jupyter with this AMI, please refer to the Jupyter section
   * `http://{EC2 Instance Public IP}:8888/mxnet/examples/notebooks`
   
 ##### Notebook Issues
-> In order to run use the cifar-100 notebook, you will need to run the cifar10-recipe notebook to
-> obtain the image data
+cifar-100 notebook issue:
+```
+In order to run use the cifar-100 notebook, you will need to run the cifar10-recipe notebook to
+obtain the image data
+```
 
-> The cifar10-recipe has a bug in the notebook. There is a bad path reference to the cifar data.
-> To fix it, update cell 9 and change any references to "data/cifar/" to "data/"
-
+cifar10-recipe notebook issue:
+```
+The cifar10-recipe has a bug in the notebook. There is a bad path reference to the cifar data.
+To fix it, update cell 9 and change any references to "data/cifar/" to "data/"
+```
 
 ### Verify MXNet is installed
 ```
