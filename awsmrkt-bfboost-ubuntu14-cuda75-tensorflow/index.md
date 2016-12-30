@@ -326,7 +326,8 @@ Version History
 v2016.08
 
  * Updated to Tensorflow v0.12.0
- * Added OpenCV 3.1.0 (Python2 and Python 3 libraries)
+ * Added OpenCV for Python3 version 3.1.0
+ * Added OpenCV for Python2 version 2.4.8
 
 
 v2016.07
