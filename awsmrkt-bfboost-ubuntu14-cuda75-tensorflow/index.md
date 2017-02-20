@@ -102,6 +102,38 @@ Place your update string in place the old one and restart Jupyter to have the pa
   sudo service jupyter restart
 ```
 
+#### Enabling SSL
+
+The systems comes with a self signed certificate already generated.  If you would like to enable SSL
+on Jupyter, edit `/home/ubuntu/.jupyter/jupyter_notebook_config.py` and uncomment the following two
+lines:
+
+```
+  #c.NotebookApp.certfile = u'/home/ubuntu/.jupyter/mycert.pem'
+  #c.NotebookApp.keyfile = u'/home/ubuntu/.jupyter/mykey.key'
+```
+
+After you uncomment the lines they should look like:
+
+```
+  c.NotebookApp.certfile = u'/home/ubuntu/.jupyter/mycert.pem'
+  c.NotebookApp.keyfile = u'/home/ubuntu/.jupyter/mykey.key'
+```
+
+Restart Jupyter
+```
+  sudo service jupyter restart
+```
+
+Jupyter will now be running with self signed certificates, when you connect to the site you will be
+presented with an [SSL warning](http://www.inmotionhosting.com/support/website/ssl/self-signed-ssl-certificate-warning).
+
+"This warning is simply letting you know that the SSL certificate was self-signed.
+In the case of accessing your own server this isn't a problem at all, and you can simply
+tell your web-browser to accept the self-signed SSL certificate and continue."
+
+You can read more about securing the Jupyter notebooks [here](http://jupyter-notebook.readthedocs.io/en/latest/public_server.html#using-ssl-for-encrypted-communication)
+
 
 #### Notebook Location
 
@@ -321,6 +353,12 @@ x1.16xlarge x1.32xlarge
 
 Version History
 -------------------------------------------------------------------------------
+
+
+v2017.01
+
+ * Updated to Tensorflow v1.0.0
+ * Removed patch for zlib - needed to build v0.12.1
 
 
 v2016.08
