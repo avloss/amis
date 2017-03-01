@@ -209,7 +209,7 @@ using the python3 command to utilize python 3.
 ##### Example 2: Trainning a CNN using MNIST dataset
 
 ```
-    python ~/tensorflow/tensorflow/models/image/mnist/convolutional.py
+    python ~/tensorflow-models/tutorials/image/mnist/convolutional.py
 ```
 
 ##### Example 3:  Training a CNN the CIFAR-10 dataset
@@ -220,7 +220,7 @@ https://www.tensorflow.org/versions/master/tutorials/deep_cnn/index.html
 On a g2.2xlarge or p2.xlarge:
 
 ```
-  python ~/tensorflow/tensorflow/models/image/cifar10/cifar10_multi_gpu_train.py
+  python ~/tensorflow-models/tutorials/image/cifar10/cifar10_multi_gpu_train.py
 ```
 
 To view the GPU usage:
@@ -236,7 +236,7 @@ you need to specify the argument "--num_gpus={ Number of GPUS }" at the end of t
 
 
 ```
-    python ~/tensorflow/tensorflow/models/image/cifar10/cifar10_multi_gpu_train.py --num_gpus=4
+    python ~/tensorflow-models/tutorials/image/cifar10/cifar10_multi_gpu_train.py --num_gpus=4
 ```
 
 To view all the GPUs being used run nvidia-smi:
@@ -355,13 +355,14 @@ Version History
 -------------------------------------------------------------------------------
 
 
-v2017.01
+v2017.02
 
  * Updated to Tensorflow v1.0.0
  * Removed patch for zlib - needed to build v0.12.1
+ * issues: Udacity notebook 5_word2vec.ipynb does not work. Fixes are in master but have no been pulled in.
 
 
-v2016.08
+v2017.01
 
  * Updated to Tensorflow v0.12.1
  * Added OpenCV for Python3 version 3.1.0
