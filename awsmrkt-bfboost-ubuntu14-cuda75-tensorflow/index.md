@@ -348,12 +348,21 @@ r4.large    r4.xlarge   r4.2xlarge  r4.4xlarge  r4.8xlarge  r4.16xlarge
 i2.xlarge   i2.2xlarge  i2.4xlarge  i2.8xlarge
 d2.xlarge   d2.2xlarge  d2.4xlarge  d2.8xlarge
 g2.2xlarge  g2.8xlarge
-p2.xlarge   p2.8xlarge
+p2.xlarge   p2.8xlarge  p2.16xlarge
 x1.16xlarge x1.32xlarge
 ```
 
 Version History
 -------------------------------------------------------------------------------
+
+
+v2017.04
+
+ * Updated to Tensorflow v1.1.0
+ * Updated to Bazel 04.5
+ * Updated to Magent v0.1.12
+ * Added bokeh (Python 2 and Python 3 modules)
+ * Added intervaltree (Python 2 and Python 3 modules)
 
 
 v2017.03
