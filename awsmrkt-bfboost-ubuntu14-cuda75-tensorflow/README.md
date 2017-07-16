@@ -122,7 +122,10 @@ After you uncomment the lines they should look like:
 
 Restart Jupyter
 ```
-  sudo service jupyter restart
+  sudo service jupyter stop
+  sudo fuser -k 8888/tcp # for some reason I've found it necessary to do this step
+  sudo service jupyter start
+
 ```
 
 Jupyter will now be running with self signed certificates, when you connect to the site you will be
